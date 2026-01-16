@@ -7,6 +7,11 @@ body {
 }
 
 .profile-img {
-  width: 220px;
-  border-radius: 50%;
+  width: 200px;        /* size of the image */
+  height: 200px;       /* must be same as width */
+  border-radius: 50%;  /* makes it circular */
+  object-fit: cover;   /* prevents image stretching */
+  display: block;
+  margin: 20px auto;   /* centers the image */
+}
 }
