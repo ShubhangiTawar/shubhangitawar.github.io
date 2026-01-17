@@ -1,139 +1,64 @@
 /* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
 }
 
-/* HEADER / CONTACT */
-.top-left {
+/* HEADER */
+.site-header {
   position: fixed;
   top: 0;
   left: 0;
-}
-
-
-.contact-info {
-  text-align: right;
-  font-size: 14px;
+  width: 100%;
+  background: white;
+  padding: 10px 20px;
+  z-index: 1000;
 }
 
 .contact-info a {
-  display: block;
-  color: black;
+  margin-right: 20px;
   text-decoration: none;
+  color: black;
 }
 
 /* PROFILE */
-.profile {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 60px 40px;
+.top-left {
+  position: fixed;
+  top: 70px;          /* below header */
+  left: 0;
+  padding: 20px;
+  width: 280px;
+  background: white;
+  z-index: 900;
 }
 
 .profile-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.profile-text {
-  max-width: 520px;
+/* MAIN CONTENT SHIFT */
+.video-section,
+.pdf-section {
+  margin-left: 320px; /* space for profile */
+  padding: 40px 20px;
 }
 
 /* VIDEO */
-.video-section {
-  padding: 40px;
-}
-
 .project-video {
   width: 100%;
-  max-width: 900px;
-  max-height: 70vh;     /* controls iPad / laptop height */
-  object-fit: cover;
+  max-width: 800px;
 }
 
 /* PDF */
-.pdf-section {
-  padding: 40px;
-}
-
-.pdf-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-
 .pdf-frame {
   width: 100%;
-  height: 100vh;
+  height: 600px;
   border: none;
 }
 
-/* PDF BUTTON (fallback) */
 .pdf-link {
-  display: none;
-  margin-top: 20px;
-  text-align: center;
-  text-decoration: none;
-  background: black;
-  color: white;
-  padding: 12px 20px;
+  display: inline-block;
+  margin-top: 10px;
 }
-
-/* --------------------
-   IPAD
--------------------- */
-@media (max-width: 1024px) {
-  .pdf-frame {
-    height: 85vh;
-  }
-
-  .project-video {
-    max-height: 60vh;
-  }
-}
-
-/* --------------------
-   MOBILE
--------------------- */
-@media (max-width: 768px) {
-
-  .contact-info {
-    text-align: center;
-  }
-
-  .profile {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .profile-img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .video-section {
-    padding: 20px;
-  }
-
-  .project-video {
-    max-height: 45vh;
-  }
-
-  .pdf-frame {
-    height: 70vh;
-  }
-
-  .pdf-link {
-    display: inline-block;
-  }
-}/* BASIC RESET */
