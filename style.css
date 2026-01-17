@@ -11,9 +11,12 @@ body {
 }
 
 /* HEADER / CONTACT */
-.site-header {
-  padding: 20px 30px;
+.top-left {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
+
 
 .contact-info {
   text-align: right;
