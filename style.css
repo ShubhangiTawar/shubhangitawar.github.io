@@ -44,7 +44,65 @@ body {
 .contact-info a:hover {
   text-decoration: underline;
 }
+/* ===============================
+   MOBILE RESPONSIVE DESIGN
+   =============================== */
+@media (max-width: 768px) {
 
+  /* General spacing */
+  body {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  /* Contact info */
+  .contact-info {
+    position: static;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  /* Profile layout */
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-text h1 {
+    font-size: 22px;
+  }
+
+  .profile-text p {
+    font-size: 14px;
+  }
+
+  /* Video */
+  .project-video {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* PDF viewer */
+  .pdf-frame {
+    height: 70vh;
+  }
+
+  /* PDF open button */
+  .pdf-link {
+    display: inline-block;
+    margin: 20px auto 0;
+  }
+}
 }
 }
 
