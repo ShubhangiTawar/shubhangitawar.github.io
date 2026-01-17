@@ -24,13 +24,16 @@ body {
 }
 
 .contact-info {
-  margin-left: auto;   /* pushes it to the right */
+  position: absolute;
+  top: 20px;
+  right: 30px;
   text-align: right;
+  font-size: 14px;
+  z-index: 1000;
 }
 
 .contact-info p {
   margin: 4px 0;
-  font-size: 14px;
 }
 
 .contact-info a {
@@ -38,17 +41,10 @@ body {
   text-decoration: none;
 }
 
-.profile-text p {
-  margin-top: 10px;
-  line-height: 1.6;
+.contact-info a:hover {
+  text-decoration: underline;
 }
-.project-video {
-  width: 400px;
-  max-width: 100%;
-  border-radius: 10px;
-  display: block;
-}
-}
+
 }
 }
 
