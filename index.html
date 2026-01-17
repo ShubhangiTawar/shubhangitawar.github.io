@@ -1,56 +1,48 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>ShubhangiTawar</title
-</head>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Website</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="profile">
-  <img src="images/IMG_7388.png" alt="Profile Image" class="profile-img">
-
-  <div class="profile-text">
-    <h1>Shubhangi Tawar </h1>
-    <p>
-      Hi , I am a design Professional specializing in craft and couture. An NID Alumna.
-    </p>
-  </div>
-</div>
-  <a href="videos/1768586064317256.mp4" target="_blank">
-  <video class="project-video" muted autoplay loop>
-    <source src="videos/1768586064317256.mp4" type="video/mp4">
-  </video>
-    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My PDF Page</title>
+  <title>Shubhangi Tawar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100vh;
-      border: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <iframe src="files/Portfolio.pdf"></iframe>
+  <!-- PROFILE SECTION -->
+  <div class="profile">
+    <img src="images/IMG_7388.png" alt="Profile Image" class="profile-img">
 
-</body>
-</html>
+    <div class="profile-text">
+      <h1>Shubhangi Tawar</h1>
+      <p>
+        Hi, I am a design professional specializing in craft and couture. An NID Alumna.
+      </p>
+    </div>
+  </div>
+
+  <!-- VIDEO SECTION -->
+  <a href="videos/1768586064317256.mp4" target="_blank">
+    <video class="project-video" muted autoplay loop>
+      <source src="videos/1768586064317256.mp4" type="video/mp4">
+    </video>
+  </a>
+
+  <!-- PDF AS WEB PAGE -->
+  <section style="width:100%; height:100vh; margin-top:40px;">
+    <object 
+      data="files/Portfolio.pdf" 
+      type="application/pdf" 
+      width="100%" 
+      height="100%">
+      
+      <p>
+        Your browser does not support PDFs.
+        <a href="files/Portfolio.pdf">Download PDF</a>
+      </p>
+
+    </object>
+  </section>
+
 </body>
 </html>
