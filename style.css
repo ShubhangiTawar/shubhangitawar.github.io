@@ -1,4 +1,4 @@
-/* BASIC RESET */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -10,16 +10,18 @@ body {
   line-height: 1.6;
 }
 
-/* CONTACT INFO */
+/* HEADER / CONTACT */
+.site-header {
+  padding: 20px 30px;
+}
+
 .contact-info {
-  position: absolute;
-  top: 20px;
-  right: 30px;
   text-align: right;
   font-size: 14px;
 }
 
 .contact-info a {
+  display: block;
   color: black;
   text-decoration: none;
 }
@@ -29,7 +31,7 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
-  padding: 100px 40px 40px;
+  padding: 60px 40px;
 }
 
 .profile-img {
@@ -40,7 +42,7 @@ body {
 }
 
 .profile-text {
-  max-width: 500px;
+  max-width: 520px;
 }
 
 /* VIDEO */
@@ -51,9 +53,11 @@ body {
 .project-video {
   width: 100%;
   max-width: 900px;
+  max-height: 70vh;     /* controls iPad / laptop height */
+  object-fit: cover;
 }
 
-/* PDF SECTIONS */
+/* PDF */
 .pdf-section {
   padding: 40px;
 }
@@ -70,43 +74,63 @@ body {
   border: none;
 }
 
-/* OPEN PDF BUTTON (MOBILE SAFE) */
+/* PDF BUTTON (fallback) */
 .pdf-link {
   display: none;
-  text-align: center;
   margin-top: 20px;
+  text-align: center;
   text-decoration: none;
-  color: white;
   background: black;
+  color: white;
   padding: 12px 20px;
 }
 
-/* 📱 MOBILE */
+/* --------------------
+   IPAD
+-------------------- */
+@media (max-width: 1024px) {
+  .pdf-frame {
+    height: 85vh;
+  }
+
+  .project-video {
+    max-height: 60vh;
+  }
+}
+
+/* --------------------
+   MOBILE
+-------------------- */
 @media (max-width: 768px) {
+
   .contact-info {
-    position: static;
     text-align: center;
-    margin: 20px 0;
   }
 
   .profile {
     flex-direction: column;
     text-align: center;
-    padding-top: 40px;
+    padding: 40px 20px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .video-section {
+    padding: 20px;
+  }
+
+  .project-video {
+    max-height: 45vh;
   }
 
   .pdf-frame {
-    height: 80vh;
+    height: 70vh;
   }
 
   .pdf-link {
     display: inline-block;
   }
-}
-
-/* 📱 IPAD */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .pdf-frame {
-    height: 85vh;
-  }
-}
+}/* BASIC RESET */
