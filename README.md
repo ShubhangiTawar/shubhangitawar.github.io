@@ -18,10 +18,9 @@ files/
  ├── Shubhangitawar_NID_grassroot_resume_compressed.pdf
  └── Portfolio.pdf
 
-Edit → Save → Commit → Push → Website updates
-Edit → Save → Commit → Push → Website updates
-Edit → Save → Commit → Push → Website updates
+
 
 Edit → Save → Commit → Push → Website updates
+
 
 
