@@ -1,64 +1,113 @@
 /* RESET */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #111;
+  background: #fafafa;
 }
 
 /* HEADER */
 .site-header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
   background: white;
-  padding: 10px 20px;
-  z-index: 1000;
+  border-bottom: 1px solid #eee;
+  z-index: 10;
 }
 
-.contact-info a {
-  margin-right: 20px;
+.contact {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.contact a {
   text-decoration: none;
-  color: black;
+  color: #111;
+  font-size: 14px;
+}
+
+/* LAYOUT */
+.layout {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
+  padding: 48px 24px;
 }
 
 /* PROFILE */
-.top-left {
-  position: fixed;
-  top: 70px;          /* below header */
-  left: 0;
-  padding: 20px;
-  width: 280px;
-  background: white;
-  z-index: 900;
+.profile {
+  position: sticky;
+  top: 80px;
 }
 
-.profile-img {
+.profile img {
   width: 100%;
-  height: auto;
   display: block;
+  margin-bottom: 20px;
 }
 
-/* MAIN CONTENT SHIFT */
-.video-section,
-.pdf-section {
-  margin-left: 320px; /* space for profile */
-  padding: 40px 20px;
+.profile h1 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.profile .intro {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* CONTENT */
+.content section {
+  margin-bottom: 80px;
 }
 
 /* VIDEO */
-.project-video {
+.video-section video {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
+  display: block;
+  background: black;
 }
 
-/* PDF */
-.pdf-frame {
+/* DOCUMENTS */
+.document h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.document iframe {
   width: 100%;
   height: 600px;
-  border: none;
+  border: 1px solid #ddd;
+  background: white;
 }
 
-.pdf-link {
+.doc-link {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile {
+    position: static;
+  }
 }
