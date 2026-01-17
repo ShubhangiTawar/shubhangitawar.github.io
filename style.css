@@ -19,8 +19,23 @@ body {
     .profile-img {
   margin-left: 20px;
 
-.profile-text h1 {
-  margin: 0;
+.profile-text {
+  max-width: 400px;
+}
+
+.contact-info {
+  margin-left: auto;   /* pushes it to the right */
+  text-align: right;
+}
+
+.contact-info p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.contact-info a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .profile-text p {
